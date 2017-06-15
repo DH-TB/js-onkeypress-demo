@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function keydown(event) {
+        console.log('onkeydown');
+    }
+    function keypress(evevt) {
+        console.log(event.keyCode);
+        console.log(event.charCode);
+        console.log('keypress');
+    }
+    function keyup(event) {
+        console.log('keyup');
+    }
+</script>
+<input type="text" onkeydown="keydown()" onkeypress="keypress()" onkeyup="keyup()" />
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input" value="default" type="text" />
+<script>
+    const input = document.getElementById('input');
+    input.onkeydown = function() {
+        return false;
+        console.log('onkeydown ' + this.value);
+    };
+    input.onkeypress = function() {
+        return false;
+        console.log('onkeypress ' + this.value);
+    };
+    input.onkeyup = function() {
+        return false;
+        console.log('onkeyup ' + this.value);
+    }
+</script>
+</body>
+</html>
